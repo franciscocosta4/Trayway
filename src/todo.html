@@ -12,33 +12,21 @@ rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:ital,wght@1,100&family=Bebas+Neue&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="todo.css">
     <title>Document</title>
 </head>
-<body >
-    <h1>
-        Good morning
-    </h1>
-    <div class="todo" >
-        <h2 id="todoTitle">Today's To-do</h2>
-        <ul id="todos">
-            <li>First today</li>
-            <li>First today</li>
-        </ul>
-    </div>
+<body>
+    <h2 id="title">Add a task for your To-do list</h2> 
     <div id="box">
-        <a href="todo.html" >Add a task</a>
-        <div id='smallBox'>
-            <p id="p1">
-            Temp: <br>
-            32º      
-            </p>
-            <p id="p2">
-            sky: <br>
-            clear      
-            </p>
-    </div> 
-    <a href="journal.html" >Journal</a>
+            <h3>write a task:</h3>
+            <input type="text" id="inputnota" placeholder="Do homework...">
+            <button id="botao" onclick="savetask()">
+                Submit 
+            </button>
+         
+            <div id="box2">
+                <a href="index.html">See your Tasks</a>
+            </div>
     </div>
 </body>
 </html>
@@ -46,4 +34,4 @@ rel="stylesheet">
 <script  src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
 <script  src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
 <script src="firebase-init.js"></script>
-<script src="showtodo.js"></script>
+<script src="todo.js"  ></script>
