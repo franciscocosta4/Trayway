@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Tangerine">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-rel="stylesheet">     
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">  
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:ital,wght@1,100&family=Bebas+Neue&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:ital,wght@1,100&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body >
+
+<body>
     <h1>
         Good morning
     </h1>
-    <div class="todo" >
+    <div class="todo">
         <h2 id="todoTitle">Today's To-do</h2>
         <ul id="todos">
-            <li>First today</li>
-            <li>First today</li>
+            <!-- Aqui vao as tarefas -->
         </ul>
     </div>
+    <button id="remover" class="botao" onclick="removeTask()">done all </button>
     <div id="box">
-        <a href="todo.html" >Add a task</a>
+        <a href="todo.html" id="linkTodo">Add a task</a>
         <div id='smallBox'>
             <p id="p1">
-            Temp: <br>
-            32º      
+                Its a great day to persue <br> your dreams
             </p>
-            <p id="p2">
-            sky: <br>
-            clear      
-            </p>
-    </div> 
-    <a href="journal.html" >Journal</a>
+        </div>
+        <a href="journal.html" id="linkTodo">Journal</a>
     </div>
+    <br>
+    <br>
+    <br>
+    <button id="logoff" onclick="{() => app.auth().signOut(),window.location.href = 'welcome.html',console.log('logged-off')}">log-off</button>
 </body>
+
 </html>
-<script  src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script> 
-<script  src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
-<script  src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
 <script src="firebase-init.js"></script>
 <script src="showtodo.js"></script>
+<script src="deletetask.js"></script>
+<script src="auth.guard.js"></script>

@@ -2,10 +2,24 @@ body{
     background: url('https://wallpapercave.com/dwp1x/wp7092668.jpg'); 
     background-image: rgb(27, 27, 27);
     /* background-repeat: no-repeat; */
-   
+    
     background-size: 100%;
   
+   
 }
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -100%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+
+
 
 h1{
     font-size: 32px;
@@ -30,21 +44,44 @@ li{
     font-family:mulish ;
 }
 
+#remover{
+        margin-top: 10px;
+        border: none;
+        background-color: rgb(224, 224, 224);
+        box-shadow: 1px 1px 7px rgb(56, 56, 56);
+        border-radius: 5px;
+        font-family: mulish;
+        padding: 10px 20px;
+        margin-left: 21px;
+        color: rgb(19, 19, 19);
+        
+}
+#remover:hover{
+    background-color: rgba(20,3,47,255); 
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+a:hover{
+    background-color: rgba(20,3,47,255);
+    color: aliceblue;
+    transition: 0.3s;
+}
 #box{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     border-radius: 15px;
-    margin-top: 60px;
+    margin-top: 50px;
     background-color: aliceblue;
     box-shadow: 1px 2px 5px rgb(56, 56, 56);
     width: 92%;
     height: 255px;
     flex-direction: column;
 }
-a{
-    margin-top: 17px;
+#linkTodo{
+    margin-top: 27px;
     background-color: rgb(224, 224, 224);
     text-decoration: none;
     font-family: mulish;
@@ -58,21 +95,60 @@ a{
     display: flex;
     flex-direction: row;
     border-radius: 15px;
-    margin-top: 20px;
-    background-color:rgba(20,3,47,255);
+    margin-top: 30px;
+    background-color: rgba(20,3,47,255);
     box-shadow: 1px 2px 5px rgb(56, 56, 56);
     width:62%;
     height:53px;
 }
 #p1{
+    
+    text-align: center;
     color: aliceblue;
     font-family: mulish;
     font-size: 13px;
-    margin-left: 10px;
+    margin-left: 26px;
+    margin-top: 10px;
 }
-#p2{
-    color: aliceblue;
+#logoff {
+    margin-left: 37%;
+    background-color: rgb(224, 224, 224);
+    text-decoration: none;
     font-family: mulish;
-    font-size: 13px;
-    margin-left: 125px;
+    color: rgb(19, 19, 19);
+    box-shadow: 1px 2px 3px rgb(155, 155, 155);
+    padding: 8px 30px;
+    border-radius: 3px;
+}
+/* CSS DA PAGINA WELCOME */
+
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 30%;
+    margin-top: 42%;
+    background-color: rgb(224, 224, 224);
+    text-decoration: none;
+    font-family: mulish;
+    color: rgb(19, 19, 19);
+    box-shadow: 1px 2px 3px rgb(155, 155, 155);
+    padding: 8px 30px;
+    border-radius: 3px;
+}
+#register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 30%;
+    margin-top: 8%;
+    background-color: rgb(224, 224, 224);
+    text-decoration: none;
+    font-family: mulish;
+    color: rgb(19, 19, 19);
+    box-shadow: 1px 2px 3px rgb(155, 155, 155);
+    padding: 8px 30px;
+    border-radius: 3px;
 }

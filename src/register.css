@@ -1,0 +1,70 @@
+body{
+    background: url('https://wallpapercave.com/dwp1x/wp7092668.jpg'); 
+    background-image: rgb(27, 27, 27);
+    /* background-repeat: no-repeat; */
+    
+    background-size: 100%;
+  
+   
+}
+
+
+
+h1{
+    font-size: 32px;
+    font-family:mulish ;
+    text-align: center;
+    color: white;
+}
+
+input{
+    vertical-align: center;
+    background-color:aliceblue;
+    border: 1;
+    margin-top: 25px;
+    width: 200px;
+    height: 30px;
+    box-shadow: 1px 1px 7px rgb(56, 56, 56);
+    border-radius: 5px;
+    color: rgb(56, 56, 56);
+    margin-left: 25%;
+}
+::placeholder{
+    color: rgb(56, 56, 56) ;
+}
+
+button{
+    margin-top: 50px;
+    border: none;
+    background-color: rgb(224, 224, 224);
+    box-shadow: 1px 1px 7px rgb(56, 56, 56);
+    border-radius: 5px;
+    font-family: mulish;
+    padding: 10px 20px;
+    margin-left: 40%;
+    color: rgb(19, 19, 19);
+    
+}
+button:hover{
+background-color: rgba(20,3,47,255); 
+color: aliceblue;
+transition: 0.3s;
+}
+
+#welcome{
+    
+    background-color: rgb(224, 224, 224);
+    text-decoration: none;
+    font-family: mulish;
+    color: rgb(19, 19, 19);
+    box-shadow: 1px 1px 7px rgb(56, 56, 56);
+    padding: 6px 14px;
+    border-radius: 3px;
+    margin-left: 38%;
+
+}
+#welcome:hover{
+    background-color: rgba(20,3,47,255);
+    color: aliceblue;
+    transition: 0.3s;
+}
